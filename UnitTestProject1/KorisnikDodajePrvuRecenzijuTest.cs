@@ -2,17 +2,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Portal;
-namespace JediničniTestovi
+namespace UnitTests
 {
     [TestClass]
-    public class KorisnikDodajePrvuRecenzijuTest
+    public class UserAddsFirstReview
     {
         [TestMethod]
         public void TestMethod1()
         {
-            ListaRecenzija listaRecenzija = new ListaRecenzija();
-            listaRecenzija.DodajRecenziju(new Recenzija());
-            Assert.IsTrue(listaRecenzija.DajBrojRecenzijaUListi().Equals(1));
+            ListOfReviews listOfReviews = new ListOfReviews();
+            listOfReviews.AddReview(new Review());
+            Assert.IsTrue(listOfReviews.ReviewCount().Equals(1));
         }
     }
 }

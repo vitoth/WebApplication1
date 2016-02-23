@@ -6,9 +6,9 @@ using System.Text;
 namespace Portal
 {
 
-    public class Recenzija
+    public class Review
     {
-        public Recenzija()
+        public Review()
         {
             
         }

@@ -6,7 +6,7 @@
     <ProjectGuid>{9B8F1E95-3918-4800-B010-5784FC483D3B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JediničniTestovi</RootNamespace>
+    <RootNamespace>UnitTests</RootNamespace>
     <AssemblyName>UnitTestProject1</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
