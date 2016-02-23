@@ -10,7 +10,7 @@ namespace Portal
     {
         public Recenzija()
         {
-            Recenzija recenzija = new Recenzija();
+            
         }
 
   
