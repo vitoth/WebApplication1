@@ -13,6 +13,10 @@ namespace Portal
         public readonly List<string> actors;
         public readonly DateTime year;
 
-        public Movie(string title, DateTime year, 
+        public Movie(string title, DateTime year)
+        {
+            this.title = title;
+            this.year = year;
+        }
     }
 }

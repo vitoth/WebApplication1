@@ -13,12 +13,15 @@ namespace Portal
 
         public string Username { get { return user.userName; } }
 
+        public Movie movie { get; private set; }
+
         RegisteredUser user;
 
         public Review(RegisteredUser regUser, string text, Movie movie)
         {
             this.text = text;
             this.user = regUser;
+            this.movie = movie;
             //Prilikom stvaranje recenzije, konstruktoru recenzije treba proslijediti 
             //registriranog korisnika,referencu na film te tekst recenzije
         }
