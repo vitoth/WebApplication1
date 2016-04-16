@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zav", "WebApplication1\Zav.csproj", "{A19F7842-AE60-49A8-B1A0-AFB69A3ED1F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTestProject1\UnitTests.csproj", "{9B8F1E95-3918-4800-B010-5784FC483D3B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{674580B6-B3B8-498D-95BA-1E1D00C6281C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Desktop\početni model.jpg = ..\..\Desktop\početni model.jpg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -27,7 +27,7 @@ namespace Portal
         }
 
 
-        bool ChangeText(string changedText, RegisteredUser user)
+        public bool ChangeText(string changedText, RegisteredUser user)
         {
             if (user.userName.Equals(this.user.userName))
             {
