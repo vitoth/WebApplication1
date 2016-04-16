@@ -12,6 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{674580B6-B
 		..\..\Desktop\početni model.jpg = ..\..\Desktop\početni model.jpg
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{718DF512-9B86-4B8C-B507-2E6FDC2003AC}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Desktop\početni model.jpg = ..\..\Desktop\početni model.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
