@@ -10,13 +10,13 @@ namespace UnitTests
         [TestMethod]
         public void Review_ChangeTextMethodChangesSetsTheValueOfTextToAChangedText()
         {
-            Review review = new Review(regUser, text, movie);
+            Review review = new Review(user, text, movie);
             string changedText = "NovaRecenzija";
-            review.ChangeText(changedText, regUser);
+            review.ChangeText(changedText, user);
             Assert.AreEqual(review.text, changedText);
         }
 
-        RegisteredUser regUser = new RegisteredUser("Janko");
+        User user = new User("Janko");
         string text = "Recenzija";
         static DateTime year = new DateTime(1999);
 

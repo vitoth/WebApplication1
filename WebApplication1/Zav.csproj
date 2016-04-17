@@ -62,17 +62,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filter\FilterMovieByGenre.cs" />
     <Compile Include="Filter\FilterMovieByDirector.cs" />
     <Compile Include="InterfaceFilter\IMovieFilter.cs" />
     <Compile Include="InterfaceFilter\IReviewFilter.cs" />
     <Compile Include="Classes\MovieCollection.cs" />
     <Compile Include="Classes\ListOfUsers.cs" />
     <Compile Include="Classes\Movie.cs" />
-    <Compile Include="Classes\RegisteredUser.cs" />
+    <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\Review.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\ListOfReviews.cs" />
-    <Compile Include="Filter\ReviewFilterByUsername.cs" />
+    <Compile Include="Filter\FilterReviewByUsername.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">

@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Portal
 {
-    public class ReviewFilterByUsername : IReviewFilter
+    public class FilterReviewByUsername : IReviewFilter
     {
-        public ReviewFilterByUsername(string username)
+        public FilterReviewByUsername(string username)
         {
             this.username = username;
         }

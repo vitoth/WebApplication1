@@ -12,7 +12,7 @@ namespace UnitTests
         public void ListOfReviews_AddReviewMethodIncreasesTheNumberOfReviewsByOne()
         {
             ListOfReviews listOfReviews = new ListOfReviews();
-            listOfReviews.AddReview(new Review(regUser, text, movie));
+            listOfReviews.AddReview(new Review(user, text, movie));
             Assert.AreEqual(1, listOfReviews.ReviewCount());
         }
 
@@ -20,15 +20,15 @@ namespace UnitTests
         public void ListOfReviews_GetReviewsMethodReturnsCollectionOfFilteredReviews()
         {
             ListOfReviews listOfReviews = new ListOfReviews();
-            listOfReviews.AddReview(new Review(regUser, text,movie));
+            listOfReviews.AddReview(new Review(user, text,movie));
 
-            ReviewFilterByUsername rfu = new ReviewFilterByUsername("Janko");
+            FilterReviewByUsername rfu = new FilterReviewByUsername("Janko");
             var filteredReviews = listOfReviews.GetReviews(rfu);
 
             Assert.AreEqual(1, filteredReviews.Count());
         }
 
-        RegisteredUser regUser = new RegisteredUser("Janko");
+        User user = new User("Janko");
         string text = "Recenzija";
         static DateTime year = new DateTime(1999);
 

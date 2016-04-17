@@ -7,16 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zav", "WebApplication1\Zav.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTestProject1\UnitTests.csproj", "{9B8F1E95-3918-4800-B010-5784FC483D3B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{674580B6-B3B8-498D-95BA-1E1D00C6281C}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\Desktop\početni model.jpg = ..\..\Desktop\početni model.jpg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{718DF512-9B86-4B8C-B507-2E6FDC2003AC}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\Desktop\početni model.jpg = ..\..\Desktop\početni model.jpg
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

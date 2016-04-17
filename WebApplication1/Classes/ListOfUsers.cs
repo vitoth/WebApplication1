@@ -9,10 +9,10 @@ namespace Portal
     {
         public ListOfUsers()
         {
-            listOfUsers = new List<RegisteredUser>();
+            listOfUsers = new List<User>();
         }
 
-        public bool Add(RegisteredUser user)
+        public bool Add(User user)
         {
 
             //AkoUListuPokušamoDodatiKorisnikaSImenomKojeVećPostojiListaSeNećePromijeniti 
@@ -25,7 +25,7 @@ namespace Portal
 
         public bool Contains(string username)
         {
-            foreach (RegisteredUser u in listOfUsers)
+            foreach (User u in listOfUsers)
             {
                 if (username.Equals(u.userName))
                     return true;
@@ -39,6 +39,6 @@ namespace Portal
             get { return listOfUsers.Count; }
         }
 
-        List<RegisteredUser> listOfUsers;
+        List<User> listOfUsers;
     }
 }

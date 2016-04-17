@@ -5,14 +5,14 @@ using System.Web;
 
 namespace Portal
 {
-    public class RegisteredUser
+    public class User
     {
         public string userName { get; private set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string email { get; set; }
 
-        public RegisteredUser(string userName)
+        public User(string userName)
         {
             this.userName = userName;
         }

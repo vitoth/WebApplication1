@@ -6,19 +6,24 @@ namespace UnitTests
     [TestClass]
     public class ListOfUsersTest
     {
+        [TestMethod]
+        public void ListOfUsers_WhenUserIsAddedToAnEmptyListListContainsOneUser()
+        {
+            User user = new User("Janko");
+            ListOfUsers listOfUsers = new ListOfUsers();
+            listOfUsers.Add(user);
+            Assert.AreEqual(1, listOfUsers.UserCount);
+        }
 
         [TestMethod]
         public void ListOfUsers_WhenUserIsAddedListIncreasesByOne()
         {
             ListOfUsers list = new ListOfUsers();
             Assert.AreEqual(0, list.UserCount);
-            RegisteredUser user = new RegisteredUser("Janko");
+            User user = new User("Janko");
+            list.Add(user);
             Assert.AreEqual(1, list.UserCount);
 
-            Assert.IsTrue(list.Add(user));
-            user = new RegisteredUser("Janko");
-
-            Assert.IsFalse(list.Add(user));
         }
 
         [TestMethod]
@@ -26,7 +31,7 @@ namespace UnitTests
         {
             ListOfUsers list = new ListOfUsers();
             string username = "Janko";
-            RegisteredUser user = new RegisteredUser(username);
+            User user = new User(username);
             list.Add(user);
             Assert.IsTrue(list.Contains(username));
         }
@@ -35,10 +40,10 @@ namespace UnitTests
         public void ListOfUsers_AddMethodReturnsFalseIfUsernameAlreadyExists()
         {
             ListOfUsers list = new ListOfUsers();
-            RegisteredUser user = new RegisteredUser("Janko");
+            User user = new User("Janko");
 
             Assert.IsTrue(list.Add(user));
-            user = new RegisteredUser("Janko");
+            user = new User("Janko");
             
             Assert.IsFalse(list.Add(user));
             Assert.AreEqual(1, list.UserCount);

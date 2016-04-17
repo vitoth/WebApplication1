@@ -15,19 +15,19 @@ namespace Portal
 
         public Movie movie { get; private set; }
 
-        RegisteredUser user;
+        User user;
 
-        public Review(RegisteredUser regUser, string text, Movie movie)
+        public Review(User user, string text, Movie movie)
         {
             this.text = text;
-            this.user = regUser;
+            this.user = user;
             this.movie = movie;
             //Prilikom stvaranje recenzije, konstruktoru recenzije treba proslijediti 
             //registriranog korisnika,referencu na film te tekst recenzije
         }
 
 
-        public bool ChangeText(string changedText, RegisteredUser user)
+        public bool ChangeText(string changedText, User user)
         {
             if (user.userName.Equals(this.user.userName))
             {
