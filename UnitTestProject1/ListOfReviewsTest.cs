@@ -9,6 +9,14 @@ namespace UnitTests
     public class ListOfReviewsTest
     {
         [TestMethod]
+        public void ListOfReviews_ReviewWillNotBeAddedIfTheMovieItReviewsIsNotInTheListOfMovies()
+        {
+            ListOfReviews listOfReviews = new ListOfReviews();
+            Assert.IsFalse(movieCollection.Contains(movie));
+            Assert.IsFalse(listOfReviews.AddReview(new Review(user, text, movie)));
+        }
+
+        [TestMethod]
         public void ListOfReviews_AddReviewMethodIncreasesTheNumberOfReviewsByOne()
         {
             ListOfReviews listOfReviews = new ListOfReviews();
@@ -30,10 +38,10 @@ namespace UnitTests
 
         User user = new User("Janko");
         string text = "Recenzija";
-        static DateTime year = new DateTime(1999);
 
+        static DateTime year = new DateTime(2008, 1, 1, 1, 0, 0);
         Movie movie = new Movie("Naziv", year);
-        
-            
+        MovieCollection movieCollection = new MovieCollection();
+
     }
 }

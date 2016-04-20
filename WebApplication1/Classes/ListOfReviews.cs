@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+
+
 namespace Portal
 {
 
@@ -12,9 +11,11 @@ namespace Portal
             listOfReviews = new List<Review>();
         }
 
-        public void AddReview(Review review)
+        public bool AddReview(Review review)
         {
+            
             listOfReviews.Add(review);
+            return true;
         }
 
         public IEnumerable<Review> GetReviews(IReviewFilter filter)
