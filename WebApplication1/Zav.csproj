@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Filter\FilterMovieByGenre.cs" />
     <Compile Include="Filter\FilterMovieByDirector.cs" />
+    <Compile Include="Filter\FilterReviewByMovie.cs" />
     <Compile Include="InterfaceFilter\IMovieFilter.cs" />
     <Compile Include="InterfaceFilter\IReviewFilter.cs" />
     <Compile Include="Classes\MovieCollection.cs" />
